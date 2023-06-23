@@ -1,0 +1,3 @@
+/home/sweetpotato/CLionProjects/problem soving (leet code)/cmake-build-debug/CMakeFiles/problem_soving__leet_code_.dir
+/home/sweetpotato/CLionProjects/problem soving (leet code)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sweetpotato/CLionProjects/problem soving (leet code)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
