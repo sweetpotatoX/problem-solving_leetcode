@@ -1,9 +1,11 @@
 //
 // Created by sweetpotato on 30/06/23.
 //
+/*
 #include <iostream>
 #include<vector>
 using namespace std;
+*/
 class Solution {
 public:
     int maximumWealth(vector<vector<int>>& accounts) {
@@ -18,10 +20,11 @@ public:
     }
 };
 //test
+/*
 int main() {
     vector<vector<int>> accounts = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     Solution solution;
     int maxWealth = solution.maximumWealth(accounts);
     cout << maxWealth << endl;
     return 0;
-}
+}*/
