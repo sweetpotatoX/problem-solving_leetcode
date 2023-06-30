@@ -11,9 +11,9 @@ public:
 };
 
 //test
-int main() {
+/*int main() {
     Solution solution;
     int result = solution.sum(5, 3);
     cout << result << endl;
     return 0;
-}
+}*/
