@@ -13,6 +13,7 @@
  * };
  */
 # include <bits/stdc++.h>
+using namespace std;
 struct TreeNode {
         int val;
         TreeNode *left;
@@ -40,7 +41,7 @@ int main() {
     root->right = new TreeNode(7);
     Solution solution;
     bool result = solution.checkTree(root);
-    std::cout << "Result: " << result << std::endl;
+    cout << result << endl;
 
     return 0;
 }
