@@ -30,7 +30,7 @@ To use this repository, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/problem-solving_leetcode.git
+    git clone https://github.com/sweetpotatoX/problem-solving_leetcode.git
     ```
 
 2. **Navigate to the problem directory:**
