@@ -42,13 +42,13 @@
 // }
 
 
-
+using namespace std;
 
 class Solution {
     public:
-        vector<int> runningSum(vector<int>& nums) {
+        vector<int> runningSum(vector<int>& nums) { //nums -----> is the vector 
     
-            for ( int i = 1; i < nums.size(); i++)
+            for ( int i = 1; i < nums.size(); i++) // .size is a function that gives the lenghth of the vector
             
                 nums[i] += nums [i-1];
                 return nums;
@@ -57,3 +57,24 @@ class Solution {
         } 
     
     };
+
+
+    // int main(){
+    //     Solution solution;
+    //     int n;
+    //     cin >> n;
+    //     vector<int> nums(n);
+    //     for (int k = 0; k < n; k++)
+    //     {
+    //         cin >> nums[k];
+    //     }
+
+    //    solution.runningSum(nums);
+
+    //     for ( int num : nums)
+    //     {
+    //         cout << num << " ";
+    //     }
+    //     return 0;
+        
+    // }
