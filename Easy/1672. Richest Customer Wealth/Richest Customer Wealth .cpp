@@ -17,7 +17,7 @@ public:
             max_wealth = max(max_wealth, wealth);
         }
         return max_wealth;
-    }
+    }  
 };
 //test
 /*
