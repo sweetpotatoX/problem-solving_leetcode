@@ -1,56 +1,52 @@
- #include <iostream>
-  #include <vector>
- #include <string>
- #include <algorithm>
- #include <cmath>
- #include <map>
- #include <set>
- #include <queue>
- #include <unordered_map>
- #include <unordered_set>
- #include <iomanip>
- #include <bitset>
- #include <stack>
- #include <numeric>
- #include <random>
- #include <bits/stdc++.h>
- #include <climits>
+//  #include <iostream>
+//   #include <vector>
+//  #include <string>
+//  #include <algorithm>
+//  #include <cmath>
+//  #include <map>
+//  #include <set>
+//  #include <queue>
+//  #include <unordered_map>
+//  #include <unordered_set>
+//  #include <iomanip>
+//  #include <bitset>
+//  #include <stack>
+//  #include <numeric>
+//  #include <random>
+//  #include <bits/stdc++.h>
+//  #include <climits>
 
 
-using namespace std;
+// using namespace std;
 class Solution {
     public:
-        int maximumWealth(vector<vector<int>>& accounts) {
-            int maxi = 0;
-            
-            for (int i = 0; i < accounts.size(); i++)
-            {
-                int sum = 0;
-                for (int j = 0; j < accounts[i].size(); j++)
-                {
-                    sum += accounts[i][j];
-                }
-                maxi = max(maxi, sum);       
+        int maximumWealth(vector<vector<int>>& Money) {
+            int Biggest_Wealth = 0;
+            for (int i = 0;i < Money.size(); i++ ){
+            int customer_wealth = 0;
+            for (int j = 0; j < Money[i].size(); j++ ){
+                customer_wealth += Money[i][j];
+            } 
+            Biggest_Wealth = max (customer_wealth , Biggest_Wealth);
             }
-            return maxi;
+            return Biggest_Wealth;
         }
-        
     };
+   /*SOLUTION TESTER*/
 
-
-    int main()
-    {
-        Solution s;
-        int n, m;
-        cin >> n >> m;
-        vector<vector<int>> accounts(n, vector<int>(m));
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; j < m; j++)
-            {
-                cin >> accounts[i][j];
-            }
-        }
-        cout << s.maximumWealth(accounts) << endl;
-        return 0;
-    }
+    // int main()
+    // {
+    //     Solution s;
+    //     int n, m;
+    //     cin >> n >> m;
+    //     vector<vector<int>> Money(n, vector<int>(m));
+    //     for (int i = 0; i < n; i++)
+    //     {
+    //         for (int j = 0; j < m; j++)
+    //         {
+    //             cin >> Money[i][j];
+    //         }
+    //     }
+    //     cout << s.maximumWealth(Money) << endl;
+    //     return 0;
+    // }
